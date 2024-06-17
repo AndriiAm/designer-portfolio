@@ -1,3 +1,5 @@
 :root {
-    --white-text: #ffffff;
+    --text: #ffffff;
+    --base: #000000;
+    --level1: #181823;
 }

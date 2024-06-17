@@ -1,4 +1,7 @@
+@import "../mixins";
+
 .header {
+  position: relative;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -10,7 +13,7 @@
   &__item {
     list-style-type: none;
     & > a {
-      //color: var(--white-text);
+      //color: var(--text);
       display: block;
       padding: 32px 24px;
       line-height: 24px;
@@ -18,18 +21,38 @@
   }
 }
 
-.banner {
-  display: flex;
+.intro {
+  max-width: 1440px;
+  margin: 0 auto;
+  &__img-wrapper img{
+    display: block;
+  }
+  &__title {
+    @include h1-title;
+    color: var(--text);
+    &-based {
+      opacity: 0.5;
+    }
+  }
+  &__subtitle {
+    @include regular-text;
+    color: var(--text);
+  }
 }
 
-.header__black-column {
+.background {
+  height: 814px;
   position: absolute;
-  width: 37.5%;
+  top: 0;
   left: 0;
-}
-
-.header__dark-column {
-  position: absolute;
-  width: 62.5%;
   right: 0;
+  display: flex;
+  &__black-column {
+    width: 37.5%;
+    background: var(--base);
+  }
+  &__dark-column {
+    width: 62.5%;
+    background: var(--level1);
+  }
 }
