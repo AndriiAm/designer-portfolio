@@ -1,0 +1,25 @@
+@import "../mixins";
+
+.dribbble {
+  background-color: var(--base);
+  &__title {
+    color: var(--text);
+  }
+  &__text {
+    max-width: 630px;
+    margin: 24px 0 40px;
+    @include regular-text;
+    color: var(--light-grey);
+  }
+  &__link {
+    @include follow-link;
+    color: var(--text);
+  }
+  &__img-block {
+    margin-top: 120px;
+    & img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

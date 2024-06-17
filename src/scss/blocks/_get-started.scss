@@ -1,0 +1,62 @@
+@import "../mixins";
+
+.get-started {
+  background-color: var(--base);
+  &__inner {
+    max-width: 1076px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: var(--text);
+  }
+  &__text {
+    margin-top: 24px;
+    max-width: 526px;
+    @include regular-text;
+    color: var(--light-grey);
+  }
+}
+
+.form {
+  width: 526px;
+  &__textarea, &__label, &__input {
+    width: 100%;
+    display: block;
+    color: var(--text);
+  }
+  &__textarea, &__input {
+    margin-top: 8px;
+    padding-left: 25px;
+    border: none;
+    background: var(--level1);
+    outline: none;
+  }
+  &__label {
+    @include small-text;
+    margin-bottom: 40px;
+  }
+  &__input {
+    @include h3-title;
+    height: 50px;
+  }
+  &__textarea {
+    height: 100px;
+    padding-top: 10px;
+    resize: none;
+    @include regular-text;
+  }
+  &__button {
+    display: block;
+    height: 75px;
+    width: 100%;
+    @include h4-title;
+    color: var(--text);
+    background-color: var(--primary);
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

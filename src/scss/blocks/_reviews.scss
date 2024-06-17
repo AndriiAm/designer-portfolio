@@ -1,0 +1,57 @@
+@import "../mixins";
+
+.reviews {
+  background-color: var(--base);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__intro {
+    max-width: 570px;
+  }
+  &__title {
+    color: var(--text);
+  }
+  &__text {
+    margin: 24px 0 40px;
+    @include regular-text;
+    color: var(--light-grey);
+  }
+  &__link {
+    @include follow-link;
+    color: var(--text);
+  }
+  &__item {
+    max-width: 636px;
+    &:not(:last-child) {
+      margin-bottom: 120px;
+    }
+    &-img {
+      & img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+    &-description {
+      padding: 64px;
+      border: 1px solid var(--dark-grey);
+      border-top: none;
+    }
+    &-title {
+      margin-bottom: 64px;
+      font-size: 24px;
+      color: var(--text);
+      font-weight: bold;
+    }
+    &-author {
+      @include regular-text;
+      font-weight: bold;
+      color: var(--dark-grey);
+    }
+    &-position {
+      margin-top: 4px;
+      @include regular-text;
+      color: var(--dark-grey);
+    }
+  }
+}

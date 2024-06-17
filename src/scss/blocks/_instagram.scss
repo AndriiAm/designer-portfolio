@@ -10,25 +10,15 @@
     color: var(--dark-grey);
   }
   &__link {
-    display: inline-block;
-    text-decoration: none;
+    @include follow-link;
     color: var(--base);
-    @include small-text;
-    &:after {
-      display: block;
-      content: "";
-      height: 1px;
-      width: 100%;
-      background-color: var(--light-grey);
-      margin-top: 2px;
-    }
   }
   &__background {
-    background: url("../images/instagram/inst.png") center/cover no-repeat;
-    width: 720px;
-    height: 600px;
     position: absolute;
     top: 0;
     right: 0;
+    & img {
+      display: block;
+    }
   }
 }

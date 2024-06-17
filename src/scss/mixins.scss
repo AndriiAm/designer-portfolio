@@ -14,6 +14,12 @@
   font-weight: bold;
 }
 
+@mixin h4-title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+}
+
 @mixin regular-text {
   font-size: 18px;
   line-height: 27px;
@@ -23,4 +29,18 @@
 @mixin small-text {
   font-size: 16px;
   line-height: 24px;
+}
+
+@mixin follow-link {
+  display: inline-block;
+  @include small-text;
+  text-decoration: none;
+  &:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--light-grey);
+    margin-top: 2px;
+  }
 }

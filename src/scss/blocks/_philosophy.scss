@@ -9,18 +9,8 @@
     color: var(--dark-grey);
   }
   &__link {
-    display: inline-block;
-    @include small-text;
+    @include follow-link;
     color: var(--base);
-    text-decoration: none;
-    &:after {
-      display: block;
-      content: "";
-      height: 1px;
-      width: 100%;
-      background-color: var(--light-grey);
-      margin-top: 2px;
-    }
   }
 }
 
