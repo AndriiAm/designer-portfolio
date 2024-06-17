@@ -3,8 +3,24 @@
   font-weight: bold;
 }
 
+@mixin h2-title {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+@mixin h3-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
 @mixin regular-text {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
+}
+
+@mixin small-text {
+  font-size: 16px;
+  line-height: 24px;
 }

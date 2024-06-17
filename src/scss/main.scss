@@ -1,4 +1,6 @@
 @import "blocks/header";
+@import "blocks/experience";
+@import "mixins";
 
 * {
   margin: 0;
@@ -15,4 +17,8 @@
   &--big {
     max-width: 1470px;
   }
+}
+
+.section__title {
+  @include h2-title;
 }

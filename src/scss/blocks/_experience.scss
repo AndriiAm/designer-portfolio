@@ -1,0 +1,31 @@
+@import "../mixins";
+
+.experience {
+  padding: 120px 0 144px;
+  background-color: var(--base);
+  &__subtitle {
+    color: var(--light-grey);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__title {
+    max-width: 690px;
+    margin: 8px 0 40px;
+    color: var(--text);
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.position {
+  &__number {
+    font-size: 117px;
+    color: var(--light-grey);
+  }
+  &__title {
+    @include h3-title;
+  }
+}
+
