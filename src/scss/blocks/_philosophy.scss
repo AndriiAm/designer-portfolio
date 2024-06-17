@@ -1,0 +1,38 @@
+@import "../mixins";
+
+.philosophy {
+  position: relative;
+  &__text {
+    max-width: 575px;
+    margin: 24px 0 134px;
+    @include regular-text;
+    color: var(--dark-grey);
+  }
+  &__link {
+    display: inline-block;
+    @include small-text;
+    color: var(--base);
+    text-decoration: none;
+    &:after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: var(--light-grey);
+      margin-top: 2px;
+    }
+  }
+}
+
+.background {
+  &__color {
+    width: 100%;
+    background-color: var(--peach-accent);
+  }
+  &__img {
+    width: 50%;
+    & img {
+      display: block;
+    }
+  }
+}

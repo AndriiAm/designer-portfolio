@@ -1,0 +1,41 @@
+@import "../mixins";
+
+.skillset {
+  background-color: var(--base);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+  &__text {
+    width: 375px;
+    @include regular-text;
+    color: var(--light-grey);
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  &__item {
+    padding-right: 48px;
+    &-img img {
+      display: block;
+    }
+    &-title {
+      margin: 24px 0 12px;
+      @include h3-title;
+      color: var(--text);
+    }
+    &-text {
+      max-width: 370px;
+      @include small-text;
+      color: var(--light-grey);
+    }
+  }
+}

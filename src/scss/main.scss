@@ -1,5 +1,10 @@
 @import "blocks/header";
 @import "blocks/experience";
+@import "blocks/philosophy";
+@import "blocks/skillset";
+@import "blocks/brands";
+@import "blocks/projects";
+@import "blocks/instagram";
 @import "mixins";
 
 * {
@@ -12,13 +17,17 @@
 .container {
   max-width: 1326px;
   margin: 0 auto;
-  padding: 0 15px;  position: relative;
+  padding: 0 15px;
+  position: relative;
 
   &--big {
     max-width: 1470px;
   }
 }
 
-.section__title {
-  @include h2-title;
+.section {
+  padding: 120px 0;
+  &__title {
+    @include h2-title;
+  }
 }

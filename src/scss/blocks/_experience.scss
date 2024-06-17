@@ -25,7 +25,25 @@
     color: var(--light-grey);
   }
   &__title {
+    margin-bottom: 22px;
     @include h3-title;
+    color: var(--text);
+  }
+  &__description {
+    max-width: 368px;
+    @include small-text;
+    color: var(--light-grey);
   }
 }
 
+.google {
+  color: #3CC74E;
+}
+
+.facebook {
+  color: #609BFF;
+}
+
+.dribbble {
+  color: #E95D90;
+}

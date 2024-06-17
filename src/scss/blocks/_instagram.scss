@@ -1,0 +1,34 @@
+@import "../mixins";
+
+.instagram {
+  position: relative;
+  background-color: var(--pink-accent);
+  &__text {
+    max-width: 575px;
+    margin: 24px 0 134px;
+    @include regular-text;
+    color: var(--dark-grey);
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--base);
+    @include small-text;
+    &:after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: var(--light-grey);
+      margin-top: 2px;
+    }
+  }
+  &__background {
+    background: url("../images/instagram/inst.png") center/cover no-repeat;
+    width: 720px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
