@@ -15,6 +15,11 @@
   &__social-links {
     margin-top: 32px;
   }
+  &__copyrights {
+    margin-top: 46px;
+    @include small-text;
+    color: var(--light-grey);
+  }
 }
 
 .social-links {
@@ -27,17 +32,17 @@
 }
 
 .page-links {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 192px;
+  margin-right: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 196px));
+  grid-template-rows: repeat(4, auto);
+  column-gap: 24px;
   &__item {
     list-style-type: none;
     & a {
-      max-width: 196px;
-      height: 48px;
-      display: block;
-      @include small-text;
+      font-size: 16px;
+      line-height: 48px;
+      display: inline-block;
       color: var(--text);
       text-decoration: none;
 

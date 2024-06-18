@@ -1,0 +1,43 @@
+@import "../mixins";
+
+.photography {
+  background-color: var(--base);
+  &__title {
+    color: var(--text);
+  }
+  &__text {
+    max-width: 585px;
+    margin: 24px 0 64px;
+    color: var(--light-grey);
+    @include regular-text;
+  }
+  &__triggers {
+    margin-bottom: 40px;
+  }
+}
+
+.triggers {
+  display: flex;
+  column-gap: 24px;
+  @include h4-title;
+  color: var(--text);
+  &__item {
+    list-style-type: none;
+    padding: 12px 16px;
+    border: 1px solid var(--primary);
+    transition: 0.2s all linear;
+    &:hover, &.active {
+      cursor: pointer;
+      background-color: var(--primary);
+    }
+  }
+}
+
+.library {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item img {
+    display: block;
+  }
+}
