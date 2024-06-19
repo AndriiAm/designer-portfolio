@@ -34,8 +34,6 @@
   margin: 0 auto;
   padding: 80px 0 84px;
   &__img-wrapper {
-    width: 750px;
-    height: 650px;
     & img{
       display: block;
       max-width: 100%;
@@ -47,14 +45,15 @@
     top: 221px;
     max-width: 740px;
   }
-  &__title {
+  &__title, &__subtitle {
     @include h1-title;
     color: var(--text);
-    &-based {
-      opacity: 0.5;
-    }
   }
   &__subtitle {
+    opacity: 0.5;
+
+  }
+  &__text {
     margin-top: 32px;
     @include regular-text;
     color: var(--text);
@@ -71,10 +70,31 @@
   z-index: -1;
   &__black-column {
     width: 37.5%;
-    background: var(--base);
+    background-color: var(--base);
   }
   &__dark-column {
     width: 62.5%;
-    background: var(--level1);
+    background-color: var(--level1);
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .intro {
+    //max-width: 768px;
+    &__text-block {
+      top: 167px;
+      max-width: 410px;
+    }
+    &__title {
+      max-width: 300px;
+    }
+  }
+  .background {
+    &__dark-column {
+      width: 0;
+    }
+    &__black-column {
+      width: 100%;
+    }
   }
 }

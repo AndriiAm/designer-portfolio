@@ -1,6 +1,9 @@
 @mixin h1-title {
   font-size: 78px;
   font-weight: bold;
+  @media screen and (max-width: 1365px) {
+    font-size: 56px;
+  }
 }
 
 @mixin h2-title {
