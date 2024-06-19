@@ -34,9 +34,16 @@
 }
 
 .library {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    &.active {
+      display: flex;
+    }
+    &.hide {
+      display: none;
+    }
+  }
   &__item img {
     display: block;
   }
