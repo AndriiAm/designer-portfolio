@@ -27,6 +27,7 @@
   &__item {
     max-width: 636px;
     &-img img{
+      max-width: 100%;
       display: block;
     }
     &-description {
@@ -57,6 +58,14 @@
     transition: 0.2s all linear;
     &:hover {
       background-color: var(--primary);
+    }
+  }
+}
+
+
+@media screen and (max-width: 1365px) {
+  .projects {
+    &__item {
     }
   }
 }

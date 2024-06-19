@@ -20,6 +20,7 @@
 }
 
 .position {
+  //max-width: 340px;
   &__number {
     font-size: 117px;
     color: var(--light-grey);
@@ -46,4 +47,15 @@
 
 .dribbble-title {
   color: #E95D90;
+}
+
+@media screen and (max-width: 1365px) {
+  .experience {
+    &__title {
+      max-width: 650px;
+    }
+  }
+  .position {
+    max-width: 280px;
+  }
 }

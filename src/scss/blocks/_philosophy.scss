@@ -19,6 +19,16 @@
     right: 0;
     & img {
       display: block;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .philosophy {
+    &__background {
+      height: 520px;
+
     }
   }
 }
