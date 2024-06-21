@@ -26,3 +26,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .brands {
+    &__item {
+      width: 50%;
+    }
+  }
+}

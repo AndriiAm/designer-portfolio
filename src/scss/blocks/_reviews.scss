@@ -60,7 +60,7 @@
 @media screen and (max-width: 1365px) {
   .reviews {
     &__intro {
-      max-width: 385px;
+      max-width: 332px;
     }
     &__item {
       &:not(:last-child) {
@@ -69,6 +69,19 @@
       &-description {
         padding: 32px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .reviews {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 64px;
+      }
+    }
+    &__inner {
+      column-gap: 23px;
     }
   }
 }

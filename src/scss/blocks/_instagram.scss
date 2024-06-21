@@ -31,3 +31,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .instagram {
+    &__text {
+      max-width: 305px;
+      margin-bottom: 133px;
+    }
+    &__background {
+      height: 600px;
+    }
+  }
+}

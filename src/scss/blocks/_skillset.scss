@@ -39,3 +39,21 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .skillset {
+    &__inner {
+      flex-direction: column;
+      row-gap: 48px;
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+  .skills {
+    justify-content: flex-start;
+    &__item-text {
+      max-width: 284px;
+    }
+  }
+}
