@@ -44,7 +44,11 @@
       display: none;
     }
   }
-  &__item img {
-    display: block;
+  &__item {
+    width: 23.61%;
+    & img {
+      display: block;
+      max-width: 100%;
+    }
   }
 }

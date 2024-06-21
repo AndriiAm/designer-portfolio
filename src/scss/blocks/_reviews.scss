@@ -5,6 +5,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    column-gap: 100px;
   }
   &__intro {
     max-width: 570px;
@@ -52,6 +53,22 @@
       margin-top: 4px;
       @include regular-text;
       color: var(--dark-grey);
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .reviews {
+    &__intro {
+      max-width: 385px;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 64px;
+      }
+      &-description {
+        padding: 32px;
+      }
     }
   }
 }
