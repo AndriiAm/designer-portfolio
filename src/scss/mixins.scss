@@ -4,11 +4,17 @@
   @media screen and (max-width: 1365px) {
     font-size: 56px;
   }
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
 }
 
 @mixin h2-title {
   font-size: 55px;
   font-weight: bold;
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
 }
 
 @mixin h3-title {

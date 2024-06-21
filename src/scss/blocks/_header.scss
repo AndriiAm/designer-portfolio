@@ -102,3 +102,29 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header {
+    &__inner {
+      height: 72px;
+    }
+  }
+  .menu {
+    display: none;
+  }
+  .intro {
+    padding: 0;
+    &__img-wrapper img{
+      margin: 0 auto;
+    }
+    &__text-block {
+      position: static;
+      margin: 0 auto;
+      max-width: 576px;
+      padding: 48px 20px;
+    }
+    &__title {
+      max-width: 320px;
+    }
+  }
+}
