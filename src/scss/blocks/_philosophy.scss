@@ -50,6 +50,18 @@
   .philosophy {
     &__background {
       position: static;
+      height: auto;
+      margin-bottom: -48px;
+      & img {
+        margin: 0 auto;
+      }
+    }
+    &__text {
+      margin-bottom: 90px;
+      &-block {
+        max-width: 320px;
+        margin-bottom: 48px;
+      }
     }
   }
 }
