@@ -44,6 +44,7 @@
   display: inline-block;
   @include small-text;
   text-decoration: none;
+  transition: 0.2s all linear;
   &:after {
     display: block;
     content: "";
@@ -51,5 +52,12 @@
     width: 100%;
     background-color: var(--light-grey);
     margin-top: 2px;
+    transition: 0.2s all linear;
+  }
+  &:hover {
+    color: var(--primary);
+    &:after {
+      background-color: var(--primary);
+    }
   }
 }

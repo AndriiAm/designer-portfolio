@@ -28,6 +28,10 @@
   column-gap: 18px;
   &__item img {
     display: block;
+    transition: 0.1s all linear;
+    &:hover {
+      scale: 1.2;
+    }
   }
 }
 
