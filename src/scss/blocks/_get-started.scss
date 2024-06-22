@@ -3,8 +3,8 @@
 .get-started {
   background-color: var(--base);
   &__inner {
-    max-width: 1076px;
-    padding: 0 15px;
+    max-width: 1124px;
+    padding: 0 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -68,8 +68,45 @@
     &__inner {
       max-width: 992px;
     }
-    .form {
-      width: 400px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .get-started {
+    &__inner {
+      column-gap: 24px;
     }
+    &__intro {
+      max-width: 332px;
+    }
+  }
+  .form {
+    width: 332px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .get-started {
+    &__inner {
+      padding: 0 20px;
+      max-width: 576px;
+      flex-direction: column;
+      row-gap: 48px;
+    }
+    &__text {
+      max-width: 400px;
+    }
+  }
+  .form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .form__input {
+    font-size: 18px;
+    line-height: 27px;
   }
 }

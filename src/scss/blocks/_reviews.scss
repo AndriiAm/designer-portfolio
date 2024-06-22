@@ -30,7 +30,7 @@
     &-img {
       & img {
         display: block;
-        max-width: 100%;
+        ma-width: 100%;
       }
     }
     &-description {
@@ -84,4 +84,27 @@
       column-gap: 23px;
     }
   }
+}
+
+@media screen and (max-width: 767px){
+  .reviews {
+    &__inner {
+      flex-direction: column;
+      row-gap: 64px;
+    }
+    &__intro {
+      max-width: 100%;
+    }
+    &__title {
+      max-width: 330px;
+    }
+    &__item {
+      max-width: 100%;
+      margin: 0 auto;
+      &-img img {
+        width: 100%;
+      }
+    }
+  }
+
 }

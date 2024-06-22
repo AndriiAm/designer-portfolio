@@ -24,3 +24,11 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .dibbble {
+    &__image-block {
+      margin-top: 64px;
+    }
+  }
+}

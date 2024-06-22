@@ -83,5 +83,16 @@
 }
 
 @media screen and (max-width: 767px) {
+  .projects {
+    padding: 64px 0 75px;
+  }
+}
 
+@media screen and (max-width: 575px) {
+  .projects {
+    &__item {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
 }

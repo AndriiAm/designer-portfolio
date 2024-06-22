@@ -54,3 +54,29 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding: 80px 0 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-links {
+    grid-template-columns: repeat(2, 140px);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    padding: 48px 0;
+    &__inner {
+      flex-direction: column;
+      row-gap: 48px;
+    }
+  }
+  .page-links {
+    grid-template-columns: 155px;
+    grid-template-rows: auto;
+  }
+}

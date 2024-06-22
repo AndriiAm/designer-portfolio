@@ -43,3 +43,23 @@
     }
   }
 }
+
+@media screen and (max-width:  767px) {
+  .instagram {
+    &__text {
+      margin: 16px 0 125px;
+      max-width: 100%;
+    }
+    &__link {
+      margin-bottom: 48px;
+    }
+    &__background {
+      position: static;
+      height: auto;
+      margin-bottom: -48px;
+      & img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
