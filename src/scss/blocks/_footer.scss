@@ -34,7 +34,7 @@
 .page-links {
   margin-right: 110px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 196px));
+  grid-template-columns: 196px;
   grid-template-rows: repeat(4, auto);
   column-gap: 24px;
   &__item {

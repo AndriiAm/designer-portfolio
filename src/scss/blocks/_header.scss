@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 1365px) {
   .intro {
-    //max-width: 768px;
+    max-width: 1024px;
     &__text-block {
       top: 167px;
       max-width: 410px;
@@ -93,6 +93,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .intro {
+    max-width: 768px;
+  }
   .background {
     &__dark-column {
       width: 0;
