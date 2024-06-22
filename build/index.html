@@ -16,23 +16,29 @@
             <img src="images/base/logo.svg" alt="">
         </div>
 
-        <ul class="header__menu menu">
-            <li class="menu__item">
-                <a href="/">Experience</a>
-            </li>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a data-goto=".experience" href="#">Experience</a>
+                </li>
 
-            <li class="menu__item">
-                <a href="/">Work</a>
-            </li>
+                <li class="menu__item">
+                    <a data-goto=".experience"  href="#">Work</a>
+                </li>
 
-            <li class="menu__item">
-                <a href="/">Photography</a>
-            </li>
+                <li class="menu__item">
+                    <a data-goto=".photography" href="#">Photography</a>
+                </li>
 
-            <li class="menu__item">
-                <a href="/">Contact</a>
-            </li>
-        </ul>
+                <li class="menu__item">
+                    <a data-goto=".get-started" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu__icon">
+            <span></span>
+        </div>
     </div>
 
     <div class="header__intro intro">
@@ -254,7 +260,7 @@
         <img src="images/brands/6.png" alt="brand6">
     </div>
 </div>
-<section class="projects">
+<section class="projects" id="work">
     <div class="container">
         <div class="projects__inner">
             <div class="projects__left-column">
@@ -602,7 +608,7 @@
     </div>
 
 </section>
-<section class="section get-started">
+<section class="section get-started" id="contact">
     <div class="get-started__inner">
         <div class="get-started__intro">
             <h2 class="section__title get-started__title">
@@ -667,10 +673,21 @@
         
         <div class="footer__right-column">
             <ul class="footer__page-links page-links">
-                <li class="page-links__item"><a href="/">Experience</a></li>
-                <li class="page-links__item"><a href="/">Work</a></li>
-                <li class="page-links__item"><a href="/">Photography</a></li>
-                <li class="page-links__item"><a href="/">Contact</a></li>
+                <li class="page-links__item">
+                    <a data-goto=".experience" href="#">Experience</a>
+                </li>
+
+                <li class="page-links__item">
+                    <a data-goto=".experience"  href="#">Work</a>
+                </li>
+
+                <li class="page-links__item">
+                    <a data-goto=".photography" href="#">Photography</a>
+                </li>
+
+                <li class="page-links__item">
+                    <a data-goto=".get-started" href="#">Contact</a>
+                </li>
             </ul>
         </div>
     </div>

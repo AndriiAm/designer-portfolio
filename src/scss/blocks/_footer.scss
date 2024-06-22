@@ -61,12 +61,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .page-links {
-    grid-template-columns: repeat(2, 140px);
-  }
-}
-
 @media screen and (max-width: 575px) {
   .footer {
     padding: 48px 0;
