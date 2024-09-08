@@ -6,4 +6,4 @@ It's a responsive landing page (1920px to 360px)  for a designer, developed base
 HTML, CSS (SCSS), JavaScript, Gulp.
 
 **Live demo:**  
-[Designer Portfolio]([https://andriiam.github.io/photostudio/](https://andriiam.github.io/designer-portfolio/)
+[Designer Portfolio](https://andriiam.github.io/designer-portfolio/)
